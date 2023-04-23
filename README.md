@@ -9,6 +9,17 @@ The HttpSourceFunction class takes a URL as a parameter to specify the RapidAPI 
 The Thread.sleep method inside the run method can also be adjusted to control the frequency at which the HTTP requests are sent to the RapidAPI endpoint.
 Logic of the application 
 This application uses the Apache Flink streaming framework to retrieve stock data from the RapidAPI service provider through an HTTP endpoint. The HttpSourceFunction class sends an HTTP GET request to the endpoint and retrieves the data as a string, which is then emitted to the Flink data stream using the ctx.collect(line) method. The run method runs continuously until the cancel method is called, sleeping for a specified time interval between requests using Thread.sleep. Finally, the main method sets up the Flink execution environment, adds the HTTP data source, and prints the data to the console using the print method.
+## Data visualisation
+The captured stock data can be difficult to interpret when presented in its raw format. To better understand the data, we used the Matplotlib library to visualize the data in the form of graphs .
+
+Here's a screenshot representing the visualization of stock prices over time using Matplotlib:
+
+![App Screenshot](https://github.com/bileldhambri/Project-Data-Streaming/blob/main/Screenshot/capture1.png?raw=true)
+
+
+Stock Prices Over Time
+
+As you can see, the visualization provides a clear picture of the stock prices over time, this way allows for identifying trends and patterns that not immediately apparent in the raw data which can be useful for making informed investment decisions.
 
 
 ## Acknowledgments
