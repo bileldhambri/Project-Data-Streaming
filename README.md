@@ -14,13 +14,11 @@ The captured stock data can be difficult to interpret when presented in its raw 
 
 Here's a screenshot representing the visualization of stock prices over time using Matplotlib:
 
-![App Screenshot](https://github.com/bileldhambri/Project-Data-Streaming/blob/main/Screenshot/capture1.png?raw=true)
-
-
 Stock Prices Over Time
 
 As you can see, the visualization provides a clear picture of the stock prices over time, this way allows for identifying trends and patterns that not immediately apparent in the raw data which can be useful for making informed investment decisions.
 
-
+ ![App Screenshot](https://github.com/bileldhambri/Project-Data-Streaming/blob/main/Screenshot/capture1.png?raw=true)
+ 
 ## Acknowledgments
 This project was inspired by the Apache Flink documentation and the RapidAPI service provider elaborated by Mohamed el Ilmi , Bilel Dhambri , Amen Allah Guetif, Mohamed Achref Langliz and Feriel Garouachi.
